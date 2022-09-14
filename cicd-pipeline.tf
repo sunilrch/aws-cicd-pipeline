@@ -56,7 +56,7 @@ resource "aws_codepipeline" "cicd-pipeline" {
 
   artifact_store {
     type     = "S3"
-    location = aws_s3_bucket_acl.codepipeline_artifacts.id
+    location = aws_s3_bucket_acl.codepipeline-artifacts.id
   }
 
   stage {
